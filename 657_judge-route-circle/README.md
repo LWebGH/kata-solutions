@@ -12,8 +12,12 @@ The valid robot moves are R (Right), L (Left), U (Up) and D (down).
 The output should be true or false representing whether the robot makes a circle.
 
 Example 1:
-```Input: "UD"  
-Output: true```  
+```
+Input: "UD"  
+Output: true  
+```  
 Example 2:  
-```Input: "LL"
-Output: false```   
+```
+Input: "LL"
+Output: false
+```   
