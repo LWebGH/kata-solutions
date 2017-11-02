@@ -14,3 +14,5 @@ const validBraces = braces => {
 
   return (stack.length === 0) ? true : false;
 };
+
+export default validBraces;

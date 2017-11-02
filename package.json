@@ -1,0 +1,28 @@
+{
+  "name": "kata-solutions",
+  "version": "1.0.0",
+  "description": "My solutions for Codewars katas / LeetCode problems",
+  "main": "",
+  "scripts": {
+    "test": "jest",
+    "babel": "babel",
+    "babel-node": "babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LWebGH/kata-solutions.git"
+  },
+  "author": "LWebGH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LWebGH/kata-solutions/issues"
+  },
+  "homepage": "https://github.com/LWebGH/kata-solutions#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^21.2.1"
+  }
+}
