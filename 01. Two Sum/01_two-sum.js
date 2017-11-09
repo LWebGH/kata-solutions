@@ -6,7 +6,6 @@
 
 // Complexity : O(n)
 // Runtime: 92 ms
-// 19 / 19 test cases passed.
 
 const twoSum = (nums, target) => {
   const map = new Map();
@@ -20,7 +19,6 @@ const twoSum = (nums, target) => {
 
 // Complexity : O(n ^ 2)
 // Runtime: 186 ms
-// 19 / 19 test cases passed.
 
 // const twoSum = (nums, target) => {
 //   const iter = (array) => {
