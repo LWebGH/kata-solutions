@@ -13,18 +13,22 @@ Examples:
 ------
 ```
 Input: 
+
 	Tree 1                     Tree 2                  
           1                         2                             
          / \                       / \                            
         3   2                     1   3                        
        /                           \   \                      
       5                             4   7                  
+
 Output: 
-Merged tree:
-	     3
-	    / \
-	   4   5
-	  / \   \ 
-	 5   4   7
+
+      Merged tree
+                   3
+                  / \
+                 4    5
+                / \    \ 
+              5    4    7
+
 Note: The merging process must start from the root nodes of both trees.
 ```
