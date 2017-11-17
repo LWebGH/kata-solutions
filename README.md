@@ -1,5 +1,6 @@
 # kata-solutions
-My solutions for [Codewars](https://www.codewars.com) katas / [LeetCode](https://leetcode.com) problem and algorithms realisation.
+My solutions for [Codewars](https://www.codewars.com) katas, [LeetCode](https://leetcode.com) problems, books tasks and algorithms realisation.
+
 
 Some more katas:  
 ------
@@ -8,4 +9,4 @@ Some more katas:
 
 
 Name of folders that containing LeetCode problems solving starts with numbers (617. Merge Two Binary Trees),  
-cw - for CodeWars catas (cw_4kyu-valid-braces), and A for algorithms (A\_Quick Sort).
+cw - for CodeWars catas (cw_4kyu-valid-braces), B for books (B\_eloquent-javascript), and A for algorithms (A\_Quick Sort).
