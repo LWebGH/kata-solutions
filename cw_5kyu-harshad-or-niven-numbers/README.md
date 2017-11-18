@@ -1,9 +1,7 @@
 # Codewars [Harshad or Niven numbers](https://www.codewars.com/kata/54a0689443ab7271a90000c6)
 
-------
 Description:
 
-------
 Harshad numbers are positive numbers that can be divided (without remainder) by the sum of their digits.
 For example, the following numbers are Harshad numbers:
 
@@ -34,9 +32,9 @@ Submission test cases
 * the provided example test cases will be replayed
 * the serie of the first 2000 Harshad numbers will be checked
 
-References:
-
 ------
+
+References:
 
 * Background: [Wikipedia's article on Harshad numbers](http://en.wikipedia.org/wiki/Harshad_number)
 * Inspiration: [RosettaCode's Harshad or Niven Series](http://rosettacode.org/wiki/Harshad_or_Niven_series)
