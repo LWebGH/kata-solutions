@@ -10,4 +10,4 @@ const range = (start, finish, step = 1) => {
 
 const sum = (array) => array.reduce((sum, num) => sum + num, 0);
 
-export {range, sum};
+export { range, sum };
