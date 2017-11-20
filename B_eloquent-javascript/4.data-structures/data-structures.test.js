@@ -1,6 +1,7 @@
 import { range, sum } from './sum-of-a-range';
 import { reverseArray, reverseArrayInPlace } from './reverse-array';
 import { arrayToList, listToArray, arrayToListRecursive, listToArrayRecursive, prepend, nth } from './linked-list';
+import { deepEqual } from './deep-equal';
 
 describe('range() and sum() tests', () => {
   test('range(1, 10) => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]', () => {
@@ -56,5 +57,17 @@ describe('linked-list tests', () => {
   });
   test('nth(arrayToList([10, 20, 30]), 1) => 20', () => {
     expect(nth(arrayToList([10, 20, 30]), 1)).toBe(20);
+  });
+});
+describe('deep-equal tests', () => {
+  const obj = { here: { is: "an" }, object: 2 };
+  test('deepEqual(arrayToList([10, 20]), { value: 10, rest: { value: 20, rest: null }}) => true', () => {
+    expect(deepEqual(arrayToList([10, 20]), { value: 10, rest: { value: 20, rest: null }})).toBe(true);
+  });
+  test('deepEqual(obj, obj) => true', () => {
+    expect(deepEqual(obj, obj)).toBe(true);
+  });
+  test('deepEqual(obj, { here: 1, object: 2 }) => false', () => {
+    expect(deepEqual(obj, { here: 1, object: 2 })).toBe(false);
   });
 });
