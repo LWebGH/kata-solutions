@@ -1,6 +1,7 @@
 import { ancestryFile } from './ancestry';
 import { flattering } from './flattering';
 import { tableOfNames, ageDifference } from './age-difference';
+import { lifeExpectancy } from './life-expectancy';
 
 describe('One dimensional array tests', () => {
   test('flattering([[1, 2, 3], [4, 5], [6]]) => [ 1, 2, 3, 4, 5, 6 ]', () => {

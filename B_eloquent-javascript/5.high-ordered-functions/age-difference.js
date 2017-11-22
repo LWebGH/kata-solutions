@@ -16,4 +16,4 @@ const ageDifference = (data) => {
   return ageStorage.reduce((sum, item) => sum + item) / ageStorage.length;
 };
 
-export { tableOfNames, ageDifference };
+export { tableOfNames, ageDifference }
