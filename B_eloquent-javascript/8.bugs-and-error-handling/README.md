@@ -12,6 +12,7 @@ Make sure you handle only the exceptions you are trying to handle.
 ## The locked box
 
 Consider the following (rather contrived) object:
+
 ```js
 const box = {
   locked : true ,
@@ -24,6 +25,7 @@ const box = {
   }
 };
 ```
+
 It is a box with a lock. Inside is an array, but you can get at it only
 when the box is unlocked. Directly accessing the _content property is not
 allowed.
