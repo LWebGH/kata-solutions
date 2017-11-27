@@ -5,6 +5,7 @@
   "main": "",
   "scripts": {
     "test": "jest",
+    "watch": "jest --watch **/*.js",
     "babel": "babel",
     "babel-node": "babel-node"
   },
