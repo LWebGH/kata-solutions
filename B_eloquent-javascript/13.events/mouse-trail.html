@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mouse Trail</title>
+  <style>
+    .arrow {
+      position: absolute;
+      transform: rotate(-20deg);
+      
+    }
+  
+    body {
+      height: 300px;
+    }
+    .arrow::after {
+      content: '';
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border: 10px solid transparent;
+      border-top-width: 25px;
+      border-bottom-width: 25px;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <script>
+    const dots = {
+      dotsArray: [],
+      current: 0,
+    };
+    for (let i = 0; i < 12; i += 1) {
+      let node = document.createElement('div');
+      node.classList.add('arrow');
+      document.body.appendChild(node);
+      dots.dotsArray.push(node);
+    }
+    addEventListener('mousemove', (event) => {
+      let dot = dots.dotsArray[dots.current];
+      dot.style.left = (event.pageX - 15) + 'px';
+      dot.style.top = (event.pageY - 25) + 'px';
+      dots.current = (dots.current + 1) % dots.dotsArray.length;
+    });
+  </script>
+</body>
+</html>
