@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text">
+  <script>
+    const field = document.querySelector("input");
+ 
+    field.addEventListener('keydown', (evt) => {
+      // 'Qq'.charCodeAt = 81, 113; 
+      // 'Ww'.charCodeAt = 87, 119; 
+      // 'Xx'.charCodeAt = 88, 120;
+      if (evt.keyCode == 81 || evt.keyCode == 113 || evt.keyCode == 87 || evt.keyCode == 119 || evt.keyCode == 88 || evt.keyCode == 120) evt.preventDefault();
+    })
+  </script>
+</body>
+</html>
