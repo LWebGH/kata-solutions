@@ -44,9 +44,13 @@
     }
     addEventListener('mousemove', (event) => {
       let dot = dots.dotsArray[dots.current];
+      dot.style.opacity = 1;
       dot.style.left = (event.pageX - 15) + 'px';
       dot.style.top = (event.pageY - 25) + 'px';
       dots.current = (dots.current + 1) % dots.dotsArray.length;
+      setTimeout(() => {
+        dot.style.opacity = 0;
+      }, 500)
     });
   </script>
 </body>
