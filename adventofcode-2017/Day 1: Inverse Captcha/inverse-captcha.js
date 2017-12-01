@@ -12,6 +12,11 @@ const inverseCaptcha = (number) => {
   return result;
 };
 
+// const oneStringSolution = (num) => num.split('')
+// .reduce((sum, cur, i) => (cur == num[i - 1]) ? sum + +cur : sum, 0)
+// + (num[0] == num[num.length - 1] ? +num[0] : 0);
+
+
 // Part Two
 const captchaHalfAround = (number) => {
   const num = String(number);
