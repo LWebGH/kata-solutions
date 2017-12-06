@@ -1,3 +1,5 @@
+const data = document.body.innerText.trim().split('\t').map(Number);
+
 const memoryReallocation = (array) => {
   const set = new Set();
   while (!set.has(array.join())) {
